@@ -49,28 +49,28 @@ div.navbar {
   width:100%;
 }
 button.endbuttonl {
-  height:30px;
-  width:90px;
-  font-size:20px;
-  border-radius:10px 0px 0px 10px;
+  height:55px;
+  width:20%;
+  font-size:40px;
+
   background:#999; 
 
   margin:0;
 }
 button.endbuttonr {
-  height:30px;
-  width:90px;
-  font-size:20px;
-  border-radius:0px 10px 10px 0px;
+  height:55px;
+  width:20%;
+  font-size:40px;
+
   background:#999;
 
   margin:0;
 }
 button.centerbutton {
-  height:30px;
-  width:90px;
-  font-size:20px;
-  border-radius:0px 0px 0px 0px;
+  height:55px;
+  width:20%;
+  font-size:40px;
+
   background:#999;
   
   margin:0; 
