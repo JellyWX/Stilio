@@ -35,3 +35,10 @@ div.foot {
   font-family:sans-serif;
   letter-spacing:4px;
 }
+img.imgfoot {
+  position:fixed;
+  bottom:0;
+  left:0;
+  height:40px;
+  width:40px;
+}
