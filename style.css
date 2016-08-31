@@ -1,6 +1,6 @@
 body {
   margin:0;
-  background-color:#eee;
+  background-color:#ddd;
 }
 
 /*divs*/
@@ -19,8 +19,9 @@ div.navbar {
   width:100%;
 }
 div.text {
-  margin-left:10%;
-  background-color:#ddd;
+  margin-left:16%;
+  background-color:#ccc;
+  margin-right:16%;
 }
 div.foot {
   height:40px;
@@ -33,6 +34,10 @@ div.foot {
   font-size:20px;
   font-family:sans-serif;
   letter-spacing:4px;
+  opacity:0.5;
+}
+div.foot:hover{
+  opacity:1;
 }
 
 /*paragraphs*/
@@ -46,20 +51,27 @@ span.title {
   color:#fff;
   cursor:default;
 }
+span.p3bold {
+  font-weight:700;
+}
+span.caption1 {
+  font-family:monofur56;
+  font-size:1.1em;
+  margin-left:10%;
+}
 p.p1 {
   letter-spacing:0.2em;
   font-family:sans-serif;
   font-weight:600;
   font-size:1.5em;
-  
 }
 p.p2 {
   letter-spacing:0.1em;
-  font-family:monofur;
+  font-family:sans-serif;
   font-size:1.6em;
 }
 p.p3 {
-  font-family:sans-serif;
+  font-family:monofur56;
   font-size:1.2em;
 }
 
@@ -68,6 +80,13 @@ img.im {
   height:144px;
   width:144px;
   margin-bottom:-20px;
+}
+img.captioned {
+  position:relative;
+  float:right;
+  height:12vw;
+  width:16vw;
+  margin-right:20%;
 }
 img.imgfoot {
   position:fixed;
@@ -122,6 +141,10 @@ a.clicky {
 /*fonts*/
 
 @font-face {
-  font-family:monofur;
+  font-family:monofur55;
   src: url(monof55.ttf);
+}
+@font-face {
+  font-family:monofur56;
+  src: url(monof56.ttf);
 }
