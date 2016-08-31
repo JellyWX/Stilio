@@ -17,10 +17,12 @@
   <body>
     <div class="head" id="head"><span class="title">Stilio</span><img src="logo_a.png" class="im"></img></div>
     <div class="navbar" id="navbar">
-      <button id="home" class="endbuttonl">Home</button><button id="about" class="centerbutton">About</button><button id="contact" class="centerbutton">Contact</button><button id="projects" class="centerbutton">Works</button><button id="github" class="endbuttonr">GitHub</button>
+      <button id="home" class="endbuttonl">Home</button><button id="about" class="centerbutton">About</button><button id="contact" class="centerbutton">Contact</button><button id="projects" class="centerbutton">Works</button><button id="github" class="endbuttonr" onclick="location.href='https://github.com/JellyWX';">GitHub</button>
     </div>
     
-    <div id="foot" class="foot">Home &bull; About &bull; Contact &bull; Projects &bull; <a onclick="mobileSwitch(false)">Switch to Large Buttons</a></div>
+    <div class="text" id="text"></div>
+    
+    <div id="foot" class="foot">Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a></div>
     <img src="logo_b.png" class="imgfoot"></img>
     
     <script>
@@ -33,13 +35,18 @@
       }
       function mobileSwitch(m){
         if(m){
+        /*runs when switched to desktop mode*/
           document.getElementById('style').href = 'style.css';
-          document.getElementById('foot').innerHTML = 'Home &bull; About &bull; Contact &bull; Projects &bull; <a onclick="mobileSwitch(false)">Switch to Large Buttons</a>'
+          document.getElementById('foot').innerHTML = 'Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a>'
         }else{
+        /*runs when switched to mobile mode*/
           document.getElementById('style').href = 'stylem.css';
-          document.getElementById('foot').innerHTML = 'Home &bull; About &bull; Contact &bull; Projects &bull; <a onclick="mobileSwitch(true)">Switch to Desktop</a>'
+          document.getElementById('foot').innerHTML = 'Home &bull; Contact &bull; <a onclick="mobileSwitch(true)" class="clicky">Switch to Desktop</a>'
         }
       }
+      
+      function
+      
       
     </script>
   </body>
