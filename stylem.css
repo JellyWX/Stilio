@@ -1,28 +1,25 @@
+body {
+  margin:0;
+}
+
+/*divs*/
 div.head {
   width: 100%;
-  height: 180px; /*Make this dynamic*/
+  height: 180px;
   
   font-size:180px;
   
   background-color: #111;
 }
-span.title {
-  margin-left: 10%;
-  
-  font-size: 80%;
-  font-family: sans-serif;
-  letter-spacing: 0.5vw;
-  
-  color:#fff;
-  cursor:default;
+div.navbar {
+  position:relative;
+  top:6px;
+  text-align:center;
+  width:100%;
 }
-body {
-  margin:0;
-}
-img.im {
-  height:144px;
-  width:144px;
-  margin-bottom:-20px;
+div.text {
+  margin-left:6%;
+  background-color:#ddd;
 }
 div.foot {
   height:40px;
@@ -36,6 +33,42 @@ div.foot {
   font-family:sans-serif;
   letter-spacing:4px;
 }
+
+/*paragraphs*/
+span.title {
+  margin-left: 10%;
+  
+  font-size: 80%;
+  font-family: sans-serif;
+  letter-spacing: 0.5vw;
+  
+  color:#fff;
+  cursor:default;
+}
+p.p1 {
+  letter-spacing:0.2em;
+  font-family:sans-serif;
+  font-weight:600;
+  font-size:2em;
+  
+}
+p.p2 {
+  letter-spacing:0.1em;
+  font-family:monofur;
+  font-size:1.6em;
+  font-weight:700;
+}
+p.p3 {
+  font-family:sans-serif;
+  font-size:1.6em;
+}
+
+/*images*/
+img.im {
+  height:144px;
+  width:144px;
+  margin-bottom:-20px;
+}
 img.imgfoot {
   position:fixed;
   bottom:0;
@@ -43,27 +76,14 @@ img.imgfoot {
   height:40px;
   width:40px;
 }
-div.navbar {
-  position:relative;
-  top:6px;
-  text-align:center;
-  width:100%;
-}
+
+/*buttons*/
 button.endbuttonl {
   height:55px;
   width:20%;
   font-size:40px;
 
   background:#999; 
-
-  margin:0;
-}
-button.endbuttonr {
-  height:55px;
-  width:20%;
-  font-size:40px;
-
-  background:#999;
 
   margin:0;
 }
@@ -76,6 +96,15 @@ button.centerbutton {
   
   margin:0; 
 }
+button.endbuttonr {
+  height:55px;
+  width:20%;
+  font-size:40px;
+
+  background:#999;
+
+  margin:0;
+}
 button:hover {
   background:#888;
   cursor:pointer;
@@ -83,7 +112,14 @@ button:hover {
 button:active {
   background:#999;
 }
+
+/*links*/
 a.clicky {
   color:blue;
   cursor:pointer;
+}
+
+@font-face {
+  font-family:monofur;
+  src: url(monof55.ttf);
 }
