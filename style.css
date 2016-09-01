@@ -55,9 +55,8 @@ span.p3bold {
   font-weight:700;
 }
 span.caption1 {
-  font-family:monofur56;
-  font-size:1.1em;
-  margin-left:10%;
+  font-family:monospace;
+  font-size:2.5em;
 }
 p.p1 {
   letter-spacing:0.2em;
@@ -82,11 +81,9 @@ img.im {
   margin-bottom:-20px;
 }
 img.captioned {
-  position:relative;
-  float:right;
-  height:12vw;
-  width:16vw;
-  margin-right:20%;
+  position:absolute;
+  height:3em;
+  width:3.99em;
 }
 img.imgfoot {
   position:fixed;

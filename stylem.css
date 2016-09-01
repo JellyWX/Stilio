@@ -49,9 +49,8 @@ span.p3bold {
   font-weight:700;
 }
 span.caption1 {
-  font-family:monofur56;
+  font-family:monospace;
   font-size:1.4em;
-  margin-left:10%;
 }
 p.p1 {
   letter-spacing:0.2em;
@@ -78,11 +77,9 @@ img.im {
   margin-bottom:-20px;
 }
 img.captioned {
-  position:relative;
-  float:right;
-  height:12vw;
-  width:16vw;
-  margin-right:20%;
+  position:absolute;
+  height:1.4em;
+  width:1.8em;
 }
 img.imgfoot {
   position:fixed;
