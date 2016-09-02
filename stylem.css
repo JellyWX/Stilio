@@ -22,6 +22,12 @@ div.text {
   background-color:#ddd;
   margin-right:6%;
 }
+div.p2 {
+  letter-spacing:0.1em;
+  font-family:sans-serif;
+  font-size:1.9em;
+  font-weight:700;
+}
 div.foot {
   height:40px;
   width:100%;
@@ -33,6 +39,7 @@ div.foot {
   font-size:20px;
   font-family:sans-serif;
   letter-spacing:4px;
+  opacity:0.7;
 }
 
 /*paragraphs*/
@@ -72,6 +79,10 @@ p.p3 {
   font-family:monofur56;
   font-size:1.8em;
 }
+p.p4 {
+  font-size:1.8em;
+  font-family:sans-serif;
+}
 
 /*images*/
 img.im {
@@ -83,6 +94,11 @@ img.captioned {
   position:relative;
   height:0.2em;
   width:0.25em;
+}
+img.flash {
+  position:relative;
+  width:1em;
+  height:1em;
 }
 img.imgfoot {
   position:fixed;

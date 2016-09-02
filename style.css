@@ -23,6 +23,11 @@ div.text {
   background-color:#ccc;
   margin-right:16%;
 }
+div.p2 {
+  letter-spacing:0.1em;
+  font-family:sans-serif;
+  font-size:1.8em;
+}
 div.foot {
   height:40px;
   width:100%;
@@ -72,8 +77,14 @@ p.p2 {
   font-size:1.8em;
 }
 p.p3 {
-  font-family:monofur56;
-  font-size:1.5em;
+  font-family:sans-serif;
+  font-size:1.6em;
+  transition:linear 0.5s;
+}
+p.p4 {
+  font-size:1.6em;
+  font-family:sans-serif;
+  margin:0;
 }
 
 /*images*/
@@ -87,6 +98,11 @@ img.captioned {
   height:0.2em;
   width:0.25em;
   top:135px;
+}
+img.flash {
+  position:relative;
+  width:1em;
+  height:1em;
 }
 img.imgfoot {
   position:fixed;
