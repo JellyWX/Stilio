@@ -84,7 +84,14 @@ p.p3 {
 p.p4 {
   font-size:1.6em;
   font-family:sans-serif;
-  margin:0;
+  
+}
+p.flashcaption {
+  font-size:1em;
+  margin-left:10%;
+  margin-right:20%;
+  margin-top:0;
+  font-family:sans-serif;
 }
 
 /*images*/
@@ -93,7 +100,7 @@ img.im {
   width:144px;
   margin-bottom:-20px;
 }
-img.captioned {
+img.browsers {
   position:absolute;
   height:0.2em;
   width:0.25em;
