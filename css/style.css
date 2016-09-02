@@ -85,7 +85,7 @@ p.p4 {
   font-family:sans-serif;
   
 }
-p.flashcaption {
+p.caption {
   font-size:1em;
   margin-left:10%;
   margin-right:20%;
@@ -99,13 +99,7 @@ img.im {
   width:144px;
   margin-bottom:-20px;
 }
-img.browsers {
-  position:absolute;
-  height:0.2em;
-  width:0.25em;
-  top:135px;
-}
-img.flash {
+img.icon {
   position:relative;
   width:1em;
   height:1em;

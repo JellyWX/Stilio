@@ -83,7 +83,7 @@ p.p4 {
   font-size:1.8em;
   font-family:sans-serif;
 }
-p.flashcaption {
+p.caption {
   font-size:1em;
   font-family:sans-serif;
 }
@@ -99,7 +99,7 @@ img.captioned {
   height:0.2em;
   width:0.25em;
 }
-img.flash {
+img.icon {
   position:relative;
   width:1em;
   height:1em;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="javascript/jquery-3.0.0.js"></script>
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
@@ -8,7 +9,7 @@
     <link rel="manifest" href="favicon/manifest.json">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     
-    <link rel="stylesheet" href="style.css" id="style"/>
+    <link rel="stylesheet" href="css/style.css" id="style"/>
     
     <meta name="theme-color" content="#ffffff">
     
@@ -20,19 +21,11 @@
       <span class="caption1">Have a presence on the web</span>
     </div>
     <div class="navbar" id="navbar">
-      <button id="home" class="endbuttonl">Home</button><button id="about" class="centerbutton">About</button><button id="contact" class="centerbutton">Contact</button><button id="projects" class="centerbutton">Pages</button><button id="github" class="endbuttonr" onclick="location.href='https://github.com/JellyWX';">GitHub</button>
+      <button id="home" class="endbuttonl" onclick="fillText('home')">Home</button><button id="about" class="centerbutton" onclick="fillText('about')">About</button><button id="contact" class="centerbutton" onclick="fillText('contact');">Contact</button><button id="projects" class="centerbutton">Pages</button><button id="github" class="endbuttonr" onclick="location.href='https://github.com/JellyWX';">GitHub</button>
     </div>
     
-    <div class="text" id="text"><p class="p1">Professional Websites</p><p class="p2">made with the visitor in mind</p>
-      <p class="p3">Stilio builds websites for companies and individuals who need their work online. <span class="p3bold"> It's amazingly simple: you provide the content and give us an ideal sketch and we make it for you.</span>
-      <p class="p4"><em>Why should you choose us?</em></p>
-      <div class="p2"><strong>No Flash</strong><img src="images/flash.png" class="flash"></img></div>
-      <p class="flashcaption">We don't use Adobe Flash or Microsoft Silverlight, meaning all our websites have full compatibility with modern browsers. They can be accessed and used on any device running any operating system with no limitations</p>
-      <div class="p2"><strong>Different Devices</strong><img src="images/browser.png" class="flash"></img></div>
-      <p class="flashcaption">2 stylesheets, hundreds of devices. By using 2 sets of configurations for all the webpage elements, it means one can seamlessly load a mobile version at the touch of a button, making our websites compatible with any device (if you find a device that the site does not work on, please contact me)</p>
-      <div class="p2"><strong>GitHub Storage</strong><img src="images/github.png" class="flash"></img></div>
-      <p class="flashcaption">GitHub is one of our tools we use to develop websites. It means you can see your website's development as we make it. Every version is at your disposal and if you're not happy with the website as the latest version, you can comment and we'll be able to fix it quicker before it gets built in.</p>
-      <br><br><br>
+    <div class="text" id="text">
+    <br><br><br>
     </div>
     
     <div id="foot" class="foot">Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a></div>
@@ -50,19 +43,19 @@
       function mobileSwitch(m){
         if(m){
         /*runs when switched to desktop mode*/
-          document.getElementById('style').href = 'style.css';
+          document.getElementById('style').href = 'css/style.css';
           document.getElementById('foot').innerHTML = 'Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a>'
         }else{
         /*runs when switched to mobile mode*/
-          document.getElementById('style').href = 'stylem.css';
+          document.getElementById('style').href = 'css/stylem.css';
           document.getElementById('foot').innerHTML = 'Home &bull; Contact &bull; <a onclick="mobileSwitch(true)" class="clicky">Switch to Desktop</a>'
         }
       }
-      
       function fillText(a){
-        document.getElementById('text').innerHTML = a;
+        $('#text').load('html/' + a + '.html');
       }
       
+      fillText('home');
     </script>
   </body>
 </html>
