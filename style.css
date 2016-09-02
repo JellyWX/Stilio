@@ -35,6 +35,7 @@ div.foot {
   font-family:sans-serif;
   letter-spacing:4px;
   opacity:0.5;
+  transition:linear 0.5s;
 }
 div.foot:hover{
   opacity:1;
@@ -56,22 +57,23 @@ span.p3bold {
 }
 span.caption1 {
   font-family:monospace;
-  font-size:2.5em;
+  font-size:0.2em;
+  color:#eee;
 }
 p.p1 {
   letter-spacing:0.2em;
   font-family:sans-serif;
   font-weight:600;
-  font-size:1.5em;
+  font-size:2em;
 }
 p.p2 {
   letter-spacing:0.1em;
   font-family:sans-serif;
-  font-size:1.6em;
+  font-size:1.8em;
 }
 p.p3 {
   font-family:monofur56;
-  font-size:1.2em;
+  font-size:1.5em;
 }
 
 /*images*/
@@ -82,8 +84,9 @@ img.im {
 }
 img.captioned {
   position:absolute;
-  height:3em;
-  width:3.99em;
+  height:0.2em;
+  width:0.25em;
+  top:135px;
 }
 img.imgfoot {
   position:fixed;
@@ -99,31 +102,31 @@ button.endbuttonl {
   width:90px;
   font-size:20px;
   border-radius:10px 0px 0px 10px;
-  background:#999; 
-
+  background-color:#999; 
   margin:0;
+  transition:linear 0.2s;
 }
 button.centerbutton {
   height:30px;
   width:90px;
   font-size:20px;
   border-radius:0px 0px 0px 0px;
-  background:#999;
-  
+  background-color:#999;
   margin:0; 
+  transition:linear 0.2s;
 }
 button.endbuttonr {
   height:30px;
   width:90px;
   font-size:20px;
   border-radius:0px 10px 10px 0px;
-  background:#999;
-
+  background-color:#999;
   margin:0;
+  transition:linear 0.2s;
 }
 button:hover {
   cursor:pointer;
-  background:#888;
+  background-color:#888;
 }
 button:active {
   background:#999;

@@ -20,6 +20,7 @@ div.navbar {
 div.text {
   margin-left:6%;
   background-color:#ddd;
+  margin-right:6%;
 }
 div.foot {
   height:40px;
@@ -36,9 +37,9 @@ div.foot {
 
 /*paragraphs*/
 span.title {
-  margin-left: 10%;
+  margin-left:2%;
   
-  font-size: 80%;
+  font-size:0.8em;
   font-family: sans-serif;
   letter-spacing: 0.5vw;
   
@@ -50,24 +51,26 @@ span.p3bold {
 }
 span.caption1 {
   font-family:monospace;
-  font-size:1.4em;
+  font-size:0.2em;
+  color:#ddd;
+  position:absolute;
 }
 p.p1 {
   letter-spacing:0.2em;
   font-family:sans-serif;
   font-weight:600;
-  font-size:2em;
+  font-size:2.2em;
   
 }
 p.p2 {
   letter-spacing:0.1em;
   font-family:sans-serif;
-  font-size:1.6em;
+  font-size:1.9em;
   font-weight:700;
 }
 p.p3 {
   font-family:monofur56;
-  font-size:1.6em;
+  font-size:1.8em;
 }
 
 /*images*/
@@ -77,9 +80,9 @@ img.im {
   margin-bottom:-20px;
 }
 img.captioned {
-  position:absolute;
-  height:1.4em;
-  width:1.8em;
+  position:relative;
+  height:0.2em;
+  width:0.25em;
 }
 img.imgfoot {
   position:fixed;
