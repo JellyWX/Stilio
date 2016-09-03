@@ -28,10 +28,11 @@
     </div>
     <br><br><br>
     
+    <span id="cookies" class="cookies" onclick="dismiss()">This page uses cookies to remember what page you visited last. Click to dismiss</span>
     <div id="foot" class="foot"><a onclick="fillText('home')" class="clicky">Home</a> &bull; <a onclick="fillText('about')" class="clicky">About</a> &bull; <a onclick="fillText('contact')" class="clicky">Contact</a> &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a></div>
     <img src="images/logos/logo_b.png" class="imgfoot"></img>
-    <img src="images/settings.png" class="settings" onclick="fillText('settings')"></img>
     
+      
     <script>
       
       var isMobile = false;
@@ -54,13 +55,23 @@
       }
       function fillText(a){
         $('#text').load('html/' + a + '.html');
+        setCookie('remember', a, 7);
       }
       
-      fillText('home');
+      var last_page = getCookie('remember');
+      if(getCookie('remember') == ''){
+        last_page = 'home';
+      }
       
-      function cookies_reset(){
-        
-        reload(true);
+      fillText(last_page);
+      
+      function dismiss(){
+        document.getElementById('cookies').hidden = true;
+        setCookie('dismissed', 'yeah', 31);
+      }
+      
+      if(getCookie('dismissed')!=''){
+        document.getElementById('cookies').hidden = true;
       }
       
       /*Credit for the following functions goes to W3Schools. Their functions are superior to anything else for making cookies*/

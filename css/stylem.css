@@ -62,6 +62,21 @@ span.caption1 {
   color:#ddd;
   position:absolute;
 }
+span.cookies {
+  position:fixed;
+  bottom:40px;
+  right:0;
+  height:40px;
+  font-size:1em;
+  text-align:right;
+  opacity:0.6;
+  cursor:pointer;
+  
+  background: -webkit-linear-gradient(left, #ccc, #fff);
+  background: -moz-linear-gradient(left, #ccc, #fff);
+  
+  background: linear-gradient(to-left, #ccc, #fff);
+}
 p.p1 {
   letter-spacing:0.2em;
   font-family:sans-serif;
@@ -162,13 +177,4 @@ button:active {
 a.clicky {
   color:blue;
   cursor:pointer;
-}
-
-@font-face {
-  font-family:monofur55;
-  src: url(monof55.ttf);
-}
-@font-face {
-  font-family:monofur56;
-  src: url(monof56.ttf);
 }

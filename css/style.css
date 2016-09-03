@@ -65,6 +65,21 @@ span.caption1 {
   font-size:0.2em;
   color:#eee;
 }
+span.cookies {
+  position:fixed;
+  bottom:40px;
+  right:0;
+  height:40px;
+  font-size:1em;
+  text-align:right;
+  opacity:0.6;
+  cursor:pointer;
+  
+  background: -webkit-linear-gradient(left, #ccc, #fff);
+  background: -moz-linear-gradient(left, #ccc, #fff);
+  
+  background: linear-gradient(to-left, #ccc, #fff);
+}
 p.p1 {
   letter-spacing:0.2em;
   font-family:sans-serif;
@@ -147,10 +162,6 @@ button.endbuttonr {
   background-color:#999;
   margin:0;
   transition:linear 0.2s;
-}
-button.save {
- margin:2%;
- margin-left:50%;
 }
 button:hover {
   cursor:pointer;
