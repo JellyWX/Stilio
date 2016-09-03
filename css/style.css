@@ -111,6 +111,14 @@ img.imgfoot {
   height:40px;
   width:40px;
 }
+img.settings {
+  position:fixed;
+  bottom:3px;
+  right:3px;
+  height:34px;
+  width:34px;
+  cursor:pointer;
+}
 
 /*buttons*/
 button.endbuttonl {
@@ -140,6 +148,10 @@ button.endbuttonr {
   margin:0;
   transition:linear 0.2s;
 }
+button.save {
+ margin:2%;
+ margin-left:50%;
+}
 button:hover {
   cursor:pointer;
   background-color:#888;
@@ -152,15 +164,4 @@ button:active {
 a.clicky {
   cursor:pointer;
   color:blue;
-}
-
-/*fonts*/
-
-@font-face {
-  font-family:monofur55;
-  src: url(monof55.ttf);
-}
-@font-face {
-  font-family:monofur56;
-  src: url(monof56.ttf);
 }

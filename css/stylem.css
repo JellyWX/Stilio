@@ -86,6 +86,8 @@ p.p4 {
 p.caption {
   font-size:1em;
   font-family:sans-serif;
+  margin-left:2.5%;
+  margin-right:5%;
 }
 
 /*images*/
@@ -110,6 +112,14 @@ img.imgfoot {
   left:0;
   height:40px;
   width:40px;
+}
+img.settings {
+  position:fixed;
+  bottom:3px;
+  right:3px;
+  height:34px;
+  width:34px;
+  cursor:pointer;
 }
 
 /*buttons*/

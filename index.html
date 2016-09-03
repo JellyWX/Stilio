@@ -25,11 +25,12 @@
     </div>
     
     <div class="text" id="text">
-    <br><br><br>
     </div>
+    <br><br><br>
     
-    <div id="foot" class="foot">Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a></div>
+    <div id="foot" class="foot"><a onclick="fillText('home')" class="clicky">Home</a> &bull; <a onclick="fillText('about')" class="clicky">About</a> &bull; <a onclick="fillText('contact')" class="clicky">Contact</a> &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a></div>
     <img src="images/logos/logo_b.png" class="imgfoot"></img>
+    <img src="images/settings.png" class="settings" onclick="fillText('settings')"></img>
     
     <script>
       
@@ -44,11 +45,11 @@
         if(m){
         /*runs when switched to desktop mode*/
           document.getElementById('style').href = 'css/style.css';
-          document.getElementById('foot').innerHTML = 'Home &bull; About &bull; Contact &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a>'
+          document.getElementById('foot').innerHTML = '<a onclick="fillText(\'home\')" class="clicky">Home</a> &bull; <a onclick="fillText(\'about\')" class="clicky">About</a> &bull; <a onclick="fillText(\'contact\')" class="clicky">Contact</a> &bull; <a onclick="mobileSwitch(false)" class="clicky">Switch to Large Buttons</a>'
         }else{
         /*runs when switched to mobile mode*/
           document.getElementById('style').href = 'css/stylem.css';
-          document.getElementById('foot').innerHTML = 'Home &bull; Contact &bull; <a onclick="mobileSwitch(true)" class="clicky">Switch to Desktop</a>'
+          document.getElementById('foot').innerHTML = '<a onclick="fillText(\'home\')" class="clicky">Home</a> &bull; <a onclick="fillText(\'contact\')" class="clicky">Contact</a> &bull; <a onclick="mobileSwitch(true)" class="clicky">Switch to Desktop</a>'
         }
       }
       function fillText(a){
@@ -56,6 +57,34 @@
       }
       
       fillText('home');
+      
+      function cookies_reset(){
+        
+        reload(true);
+      }
+      
+      /*Credit for the following functions goes to W3Schools. Their functions are superior to anything else for making cookies*/
+      function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires="+d.toUTCString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+      }
+
+      function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+      }
     </script>
   </body>
 </html>
